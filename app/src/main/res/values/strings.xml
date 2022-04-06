@@ -1,0 +1,31 @@
+<resources>
+    <string name="btn1_description">Start foreground service</string>
+    <string name="btn1_title" >Start</string>
+    <string name="simple_service_title">Simple Service</string>
+    <string name="simple_service_desc">Simple Service from the OTest app</string>
+
+    <string name="main_create_noti2_btn">Send</string>
+
+    <string name="btnA_title">Go to Settings</string>
+    <string name="noti_channel_default">Immutable Channel</string>
+    <string name="noti1_title">Notification 1 Title</string>
+    <string name="immutable1_body">The content</string>
+    <string name="noti2_title">Second notification</string>
+    <string name="mutable1_body">Notification body text.</string>
+    <string name="noti_channel_second">Mutable Channel</string>
+
+    <string name="main_immutable_title">Trigger Immutable Intent</string>
+    <string name="main_immutable_send1">Send 1</string>
+    <string name="main_immutable_send2">Send 2</string>
+    <string name="main_immutable_config">Go to Immutable channel settings</string>
+
+    <string name="main_mutable_title">Trigger Mutable Intent</string>
+    <string name="main_mutable_send1">Send 1</string>
+    <string name="main_mutable_send2">Send 2</string>
+    <string name="main_mutable_config">Go to Mutable channel settings</string>
+    <string name="immutable2_body">Second Notification for Immutable Channel</string>
+    <string name="mutable2_body">Second Notification for Mutable Channel</string>
+    <string name="extra_name">Extra_Name:</string>
+    <string name="details">Details</string>
+    <string name="go_to_details_manually">Go to details manually</string>
+</resources>
