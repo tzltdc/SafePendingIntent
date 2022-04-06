@@ -122,14 +122,14 @@ public class MainActivity extends Activity {
   @Nullable
   private PendingIntent immutablePendingIntent(String extraValue) {
     Intent notifyIntent = DetailActivity.constructIntent(this, extraValue);
-    return PendingIntent.getActivity(this, 0, notifyIntent, PendingIntent.FLAG_IMMUTABLE);
+    return PendingIntent.getActivity(this, 0, notifyIntent, 0);
   }
 
   @SuppressLint("InlinedApi")
   @Nullable
   private PendingIntent mutablePendingIntent(String extraValue) {
     Intent notifyIntent = DetailActivity.constructIntent(this, extraValue);
-    return PendingIntent.getActivity(this, 0, notifyIntent, PendingIntent.FLAG_MUTABLE);
+    return PendingIntent.getActivity(this, 0, notifyIntent, 0);
   }
 
   /** Send Intent to load system Notification Settings for this app. */
