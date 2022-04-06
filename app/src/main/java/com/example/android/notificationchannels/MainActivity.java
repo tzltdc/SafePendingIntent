@@ -30,6 +30,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
+import com.tony.tang.safe.pending.intent.sdk.SafePendingIntent;
+
 /** Display main screen for sample. Displays controls for sending test notifications. */
 public class MainActivity extends Activity {
   private static final String TAG = MainActivity.class.getSimpleName();
@@ -122,14 +124,14 @@ public class MainActivity extends Activity {
   @Nullable
   private PendingIntent immutablePendingIntent(String extraValue) {
     Intent notifyIntent = DetailActivity.constructIntent(this, extraValue);
-    return PendingIntent.getActivity(this, 0, notifyIntent, 0);
+    return SafePendingIntent.getActivity(this, 0, notifyIntent, 0);
   }
 
   @SuppressLint("InlinedApi")
   @Nullable
   private PendingIntent mutablePendingIntent(String extraValue) {
     Intent notifyIntent = DetailActivity.constructIntent(this, extraValue);
-    return PendingIntent.getActivity(this, 0, notifyIntent, 0);
+    return SafePendingIntent.getActivity(this, 0, notifyIntent, 0);
   }
 
   /** Send Intent to load system Notification Settings for this app. */
